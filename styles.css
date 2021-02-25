@@ -158,7 +158,7 @@ a {
   color: rgba(245, 245, 245, 0.708);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 458px) {
   .pageone p {
     width: 80%;
   }
@@ -201,7 +201,7 @@ a {
     margin: -45% 5% 0;
   }
   .box11 {
-    margin: -20% 40% 0;
+    margin: -20% 50% 0;
   }
   .box12 {
     margin: 20% auto 0;
