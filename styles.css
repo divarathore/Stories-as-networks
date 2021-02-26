@@ -30,6 +30,8 @@ a {
   transition: transform 2s ease-in-out;
   text-decoration: none;
   position: relative;
+  transition: background-color 5s ease-in-out;
+  background-image: radial-gradient( rgba(245, 245, 245, 0.454),  rgba(59, 147, 201, 0.603));
 }
 .box1 {
     padding: 4%;
@@ -39,25 +41,26 @@ a {
     transition: opacity 2s ease-in-out;
     animation: colorchange 10s;
  }
- .box1:hover {
-   opacity: 0.3;
+.box1:hover {
+ opacity: 0.3;
+}
+.box8:hover {
+ opacity: 0.5;
+}
+.box10:hover {
+  background-color: rgb(245, 245, 245);
+}
+.box7:hover {
+ opacity: 0;
 }
 .box2 {
   padding: 2rem;
   width: 7rem;
   border-radius: 20%;
-  margin: auto 10%;
+  margin: auto 20%;
   transform: translateY(6vh) translateX(-8vw);
   /* animation-name: rotate; */
 }
-/* @keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-} */
 .box3 {
   padding: 2rem;
   width: 4rem;
@@ -96,6 +99,7 @@ a {
   border-radius: 40%;
   margin: -10% 5%; 
   transform: translateY(20vh) translateX(5vw);
+  transition: opacity 2s ease-in-out;
 }
 .box8 {
   padding: 1.5rem;
@@ -103,6 +107,7 @@ a {
   border-radius: 40%;
   margin: -20% 70%;
   transform: translateY(5vh) translateX(-4vw);
+  transition: opacity 2s ease-in-out;
 }
 .box9 {
   padding: 2rem;
@@ -116,6 +121,7 @@ a {
   width: 4rem;
   border-radius: 45%;
   margin: -5% 25% 0;
+  transition: background-color 2s ease-in-out;
 }
 .box11 {
   padding: 1.5rem;
@@ -138,18 +144,25 @@ a {
     padding: 5%;
     width: 85%;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 5%;
     border-radius: 5%;
     color: rgb(46, 112, 152);
 }
+/* .round p {
+  border-radius: 50%;
+} */
 .pageone .button {
   background-color: rgba(245, 245, 245, 0.543);
   color: rgb(46, 112, 152);
   padding: 1.5% 2%;
   text-decoration: none;
   display: inline-block;
-  margin: 10%;
+  margin: 5%;
+  margin-bottom: 1%;
   border-radius: 10%;
+  /* animation-duration: 10s;
+  animation-name: slidein0;
+  animation-iteration-count: infinite; */
 }
 .pageone a {
   display: inline-block;
@@ -225,6 +238,17 @@ a {
 @keyframes colorchange4 {
   0% { background: rgba(199, 143, 46, 0.31) }
   100% { background: rgba(245, 245, 245, 0.269)}
+}
+@keyframes slidein0 {
+  0% {
+    margin-left: 0%;
+  }
+  0% {
+    margin-left: 0%;
+  }
+  0% {
+    margin-left: 0%;
+  }
 }
 @keyframes slidein {
   0% {
