@@ -27,6 +27,7 @@ a {
   font-family: 'ChapeauTRIAL-Thin';
 }
 .on {
+  display: inline-block;
   text-decoration: none;
   color: rgba(245, 245, 245, 0.708);
   font-size: 0.9rem;
