@@ -26,6 +26,11 @@ p {
 a {
   font-family: 'ChapeauTRIAL-Thin';
 }
+.on {
+  text-decoration: none;
+  color: rgba(245, 245, 245, 0.708);
+  font-size: 0.9rem;
+}
 .box {
   background-color: rgba(245, 245, 245, 0.283);
   color: rgb(46, 112, 152);
