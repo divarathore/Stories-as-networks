@@ -7,7 +7,9 @@
 }
 html {
   background-color: rgb(59, 147, 201);   
-  animation: one 5s ease-in-out;
+}
+.white {
+  animation: one 1.5s ease-in-out;
 }
 @keyframes one {
   0% { background-color: rgba(245, 245, 245, 0.582);}
@@ -61,7 +63,11 @@ a {
 }
 .box12:hover {
   background-color: black;
- }
+}
+.button:hover {
+  opacity: 0.2;
+  transition: opacity 2s ease-in-out;
+}
 .box2 {
   padding: 2rem;
   width: 7rem;
