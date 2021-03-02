@@ -10,7 +10,7 @@ html {
   animation: one 5s ease-in-out;
 }
 @keyframes one {
-  0% { background-color: whitesmoke;}
+  0% { background-color: rgba(245, 245, 245, 0.582);}
 }
 body {
   font-family: 'ChapeauTRIAL-Thin';
@@ -34,7 +34,7 @@ a {
   transition: background-color 5s ease-in-out;
   background-image: radial-gradient( rgba(245, 245, 245, 0.31),  rgba(59, 147, 201, 0.603));
   animation-direction: alternate;
-  animation: myfirst 5s 5;
+  animation: myfirst 5s 3;
 }
 .box1 {
  padding: 4%;
