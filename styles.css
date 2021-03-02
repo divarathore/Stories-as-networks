@@ -5,10 +5,13 @@
   font-weight: normal;
   font-style: normal;
 }
-html{
-    background-color: rgb(59, 147, 201);
+html {
+  background-color: rgb(59, 147, 201);   
+  animation: one 5s ease-in-out;
 }
-
+@keyframes one {
+  0% { background-color: whitesmoke;}
+}
 body {
   font-family: 'ChapeauTRIAL-Thin';
   font-size: 1.5rem;
@@ -16,8 +19,6 @@ body {
   line-height: 2rem;
 }
 p {
-  /* font-family: 'Times New Roman', Times, serif;
-    font-weight: lighter;   */
     font-family: 'ChapeauTRIAL-Thin';
 }
 a {
@@ -31,16 +32,18 @@ a {
   text-decoration: none;
   position: relative;
   transition: background-color 5s ease-in-out;
-  background-image: radial-gradient( rgba(245, 245, 245, 0.454),  rgba(59, 147, 201, 0.603));
+  background-image: radial-gradient( rgba(245, 245, 245, 0.31),  rgba(59, 147, 201, 0.603));
+  animation-direction: alternate;
+  animation: myfirst 5s 5;
 }
 .box1 {
-    padding: 4%;
-    width: 8%;
-    margin: 2% auto 0;
-    border-radius: 45%;
-    transition: opacity 2s ease-in-out;
-    animation: colorchange 10s;
- }
+ padding: 4%;
+ width: 8%;
+ margin: 2% auto 0;
+ border-radius: 45%;
+ transition: opacity 2s ease-in-out;
+ animation: colorchange 10s;
+}
 .box1:hover {
  opacity: 0.3;
 }
@@ -53,13 +56,18 @@ a {
 .box7:hover {
  opacity: 0;
 }
+.box6:hover {
+  background-color: rgba(199, 143, 46, 0.31);
+}
+.box12:hover {
+  background-color: black;
+ }
 .box2 {
   padding: 2rem;
   width: 7rem;
   border-radius: 20%;
   margin: auto 20%;
   transform: translateY(6vh) translateX(-8vw);
-  /* animation-name: rotate; */
 }
 .box3 {
   padding: 2rem;
@@ -69,6 +77,7 @@ a {
   animation-duration: 30s;
   animation-name: slidein;
   animation-iteration-count: infinite;
+  transition: opacity 2s ease-in-out;
 }
 .box4 {
   padding: 2.5rem;
@@ -138,6 +147,7 @@ a {
   animation: colorchange3 20s;
 }
 
+
 .pageone p {
     text-align: left;
     background-image: radial-gradient( whitesmoke,  rgb(59, 147, 201));
@@ -148,9 +158,6 @@ a {
     border-radius: 5%;
     color: rgb(46, 112, 152);
 }
-/* .round p {
-  border-radius: 50%;
-} */
 .pageone .button {
   background-color: rgba(245, 245, 245, 0.543);
   color: rgb(46, 112, 152);
@@ -160,9 +167,9 @@ a {
   margin: 5%;
   margin-bottom: 1%;
   border-radius: 10%;
-  /* animation-duration: 10s;
-  animation-name: slidein0;
-  animation-iteration-count: infinite; */
+  position: sticky;
+  bottom: 0;
+  right: 0;
 }
 .pageone a {
   display: inline-block;
@@ -220,9 +227,6 @@ a {
     margin: 20% auto 0;
   }
 }
-/* .box {
-  transform: translateY(0) translateX(0);
-} */
 @keyframes colorchange {
   0% { background: rgba(245, 245, 245, 0.708) }
   100% { background: rgba(245, 245, 245, 0)}
@@ -270,5 +274,16 @@ a {
   }
   90% {
     margin-left: 10%;
+  }
+}
+@keyframes myfirst {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
